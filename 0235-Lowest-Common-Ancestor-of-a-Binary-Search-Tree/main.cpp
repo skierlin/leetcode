@@ -1,25 +1,3 @@
-/// Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
-/// Author : liuyubobobo
-/// Time   : 2017-11-18
-
-#include <iostream>
-#include <cassert>
-
-using namespace std;
-
-
-/// Definition for a binary tree node.
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
-
-/// Recursive
-/// Time Complexity: O(lgn), where n is the node's number of the tree
-/// Space Complexity: O(h), where h is the height of the tree
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
@@ -40,7 +18,3 @@ public:
     }
 };
 
-int main() {
-
-    return 0;
-}

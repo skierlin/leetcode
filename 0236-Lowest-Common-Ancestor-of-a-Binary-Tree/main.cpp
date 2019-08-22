@@ -1,24 +1,3 @@
-/// Source : https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
-/// Author : liuyubobobo
-/// Time   : 2017-01-30
-
-#include <iostream>
-#include <cassert>
-
-using namespace std;
-
-/// Recursion implementation
-/// Time Complexity: O(n)
-/// Space Complexity: O(n)
-
-///Definition for a binary tree node.
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
 class Solution {
 public:
     // 在root中寻找p和q
@@ -49,8 +28,3 @@ public:
     }
 };
 
-
-int main() {
-
-    return 0;
-}
