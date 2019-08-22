@@ -20,7 +20,6 @@ private:
 
         int len = right - left + 1;
         if(len <= 2){
-            assert(len >= 1);
             return nums[left];
         }
 
@@ -34,7 +33,6 @@ private:
         int leftMajorityCnt = occurance(nums, left, mid, leftMajority);
         int rightMajorityCnt = occurance(nums, mid + 1, right, rightMajority);
 
-        assert(leftMajority != rightMajority);
         return leftMajorityCnt > rightMajorityCnt ? leftMajority : rightMajority;
     }
 
