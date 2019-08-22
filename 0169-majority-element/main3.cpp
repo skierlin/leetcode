@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <cassert>
 
 using namespace std;
 
@@ -12,7 +11,6 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
 
-        assert(nums.size() > 0);
 
         return majorityElement(nums, 0, nums.size() - 1);
     }
